@@ -1,0 +1,151 @@
+@use './themes' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+main {
+  background: $mainBackground;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $default;
+}
+
+.calc-container {
+  min-height: 55vh;
+  width: 28%;
+
+  header {
+    display: flex;
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+
+    .theme-toggler {
+      display: flex;
+      h2 {
+        font-size: 12px;
+        align-self: flex-end;
+        margin-right: 1rem;
+      }
+
+      .number-container {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+        .number {
+          margin: 0rem 0.35rem;
+        }
+      }
+
+      .input-container {
+        width: 60px;
+        height: 20px;
+        border-radius: 10px;
+        background: $keypad_toggle_Background;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .input {
+          background: $equal_toggle_KeyBackground;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .input.active {
+          opacity: 1;
+        }
+
+        // .input1.active {
+        //   opacity: 1;
+        // }
+
+        // .input2.active {
+        //   opacity: 1;
+        // }
+
+        // .input3.active {
+        //   opacity: 1;
+        // }
+      }
+    }
+  }
+
+  .screen {
+    min-height: 10vh;
+    width: 90%;
+    background: $screenBackground;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .button-container {
+    min-height: 40vh;
+    width: 90%;
+    background: $keypad_toggle_Background;
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.5rem;
+    grid-gap: 1rem;
+
+    .button,
+    .reset,
+    .equal,
+    .delete {
+      border-radius: 10px;
+      outline: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      background: $normalKeyBackground;
+      box-shadow: 0 5px $normalKeyShadow;
+      text-align: center;
+    }
+
+    // button {
+    //   font: 400 13.3333px Arial;
+    // }
+
+    .reset,
+    .delete {
+      background: $removeKeyBackground;
+      box-shadow: 0 5px $removeKeyShadow;
+    }
+
+    .equal {
+      background: $equal_toggle_KeyBackground;
+      box-shadow: 0 5px $equalKeyShadow;
+    }
+
+    .reset,
+    .equal,
+    .delete {
+      color: $default;
+    }
+
+    .button {
+      color: $normalKeyText;
+    }
+
+    .reset {
+      grid-column: 1/3;
+    }
+
+    .equal {
+      grid-column: 3/5;
+    }
+  }
+}
