@@ -60,7 +60,7 @@ main {
   opacity: 0;
   cursor: pointer;
 }
-.calc-container header .theme-toggler .input-container .input.active {
+.calc-container header .theme-toggler .input-container .input:checked {
   opacity: 1;
 }
 .calc-container .screen {
