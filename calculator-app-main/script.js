@@ -4,28 +4,28 @@ const input2 = document.querySelector("#input2");
 const input3 = document.querySelector("#input3");
 
 function setColorTheme() {
-  if (input1.checked === true) {
+  if (input1.checked == true) {
     main.classList.add("dark");
   } else {
-    main.classList.remove("dark");
     input1.checked = false;
+    main.classList.remove("dark");
   }
-  if (input2.checked === true) {
+  if (input2.checked == true) {
     main.classList.add("light");
   } else {
-    main.classList.remove("light");
     input2.checked = false;
+    main.classList.remove("light");
   }
-  if (input3.checked === true) {
+  if (input3.checked == true) {
     main.classList.add("saturated");
   } else {
-    main.classList.remove("saturated");
     input3.checked = false;
+    main.classList.remove("saturated");
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    input1.checked = true;
-  });
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   input1.checked = true;
+  // });
 
   console.log(input1);
   console.log(input2);
