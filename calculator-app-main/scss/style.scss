@@ -35,12 +35,12 @@ main {
         margin-right: 1rem;
       }
 
-      .number-container {
+      .label-container {
         display: flex;
         justify-content: space-evenly;
         text-align: center;
 
-        .number {
+        .label {
           margin: 0rem 0.35rem;
         }
       }
@@ -55,6 +55,7 @@ main {
         justify-content: space-evenly;
 
         .input {
+          appearance: none;
           background: $equal_toggle_KeyBackground;
           width: 15px;
           height: 15px;

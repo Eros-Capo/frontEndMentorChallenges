@@ -34,12 +34,12 @@ main {
   align-self: flex-end;
   margin-right: 1rem;
 }
-.calc-container header .theme-toggler .number-container {
+.calc-container header .theme-toggler .label-container {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
 }
-.calc-container header .theme-toggler .number-container .number {
+.calc-container header .theme-toggler .label-container .label {
   margin: 0rem 0.35rem;
 }
 .calc-container header .theme-toggler .input-container {
@@ -52,6 +52,7 @@ main {
   justify-content: space-evenly;
 }
 .calc-container header .theme-toggler .input-container .input {
+  appearance: none;
   background: #d03f2f;
   width: 15px;
   height: 15px;
