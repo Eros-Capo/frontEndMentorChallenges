@@ -23,9 +23,9 @@ function setColorTheme() {
     main.classList.remove("saturated");
   }
 
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   input1.checked = true;
-  // });
+  document.addEventListener("DOMContentLoaded", () => {
+    input1.checked = true;
+  });
 
   console.log(input1);
   console.log(input2);
