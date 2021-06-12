@@ -1,4 +1,4 @@
-const main = document.querySelector("main");
+let main = document.querySelector("main");
 const input1 = document.querySelector("#input1");
 const input2 = document.querySelector("#input2");
 const input3 = document.querySelector("#input3");
@@ -8,9 +8,9 @@ const input3 = document.querySelector("#input3");
 // };
 
 function setColorTheme() {
-  document.addEventListener("DOMContentLoaded", () => {
-    input1.checked = true;
-  });
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   input1.checked = true;
+  // });
 
   input1.checked = true;
 
